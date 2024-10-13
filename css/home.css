@@ -1,40 +1,47 @@
-#home{
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8rem;
 }
 
-#home p{
+#home p {
     font-size: 1.5rem;
     text-align: justify;
+    text-align-last: center;
 }
 
-#home .content h1{
+#home .content h1 {
     text-align: center;
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
-#home .content h2{
+#home .content h2 {
     text-align: center;
     font-size: 2rem;
     margin: -1rem 0;
     font-weight: 700;
 }
 
-#home .content h3{
+#home h2::After {
+    content: "AND";
+    color: white;
+}
+
+#home .content h3 {
     text-align: center;
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
-#home span{
+#home span {
     color: #b74b4b;
 }
 
+/*
 #home .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -55,8 +62,9 @@
     color: white;
     box-shadow: 0 0 25px #b74b4b;
 }
+*/
 
-#home .social-icons a{
+#home .social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -71,15 +79,15 @@
     color: #b74b4b;
 }
 
-#home .social-icons{
+#home .social-icons {
     text-align: center;
 }
 
-#home .social-icons a:hover{
+#home .social-icons a:hover {
     color: white;
     transform: scale(1.3) translateY(-5px);
     background-color: #b74b4b;
-    box-shadow: 0  0 25px #b74b4b;
+    box-shadow: 0 0 25px #b74b4b;
 }
 
 /*#home .images img{
@@ -88,22 +96,22 @@
     transition: 0.2s linear;
 }*/
 
-#home .typing-text{
+#home .typing-text {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
 
-#home .typing-text span{
+#home .typing-text span {
     position: relative;
 }
 
-#home .typing-text span::before{
+/*#home .typing-text span::before{
     color: #b74b4b;
     animation: words 20s infinite;
-}
+}*/
 
-#home .typing-text span::after{
+#home .typing-text span::after {
     content: "";
     background-color: black;
     position: absolute;
@@ -113,52 +121,52 @@
     animation: cursor 0.6s infinite;
 }
 
-@keyframes cursor{
-    to{
+@keyframes cursor {
+    to {
         border-left: 3px solid #b74b4b;
     }
 }
 
-@media(max-width:995px){
-    #home{
+@media(max-width:995px) {
+    #home {
         flex-direction: column;
         margin: 3rem 2rem;
     }
 
-    #home .content h1{
+    #home .content h1 {
         font-size: 3.5rem;
     }
 
-    #home .content h2{
+    #home .content h2 {
         font-size: 1.5rem;
         margin: -0.5rem 0;
     }
-    
-    #home .content h3{
+
+    #home .content h3 {
         font-size: 2.5rem;
     }
-    
-    #home img{
+
+    #home img {
         margin-top: -10rem;
         margin-bottom: -5rem;
     }
 }
 
-@media(max-width:432px){
+@media(max-width:432px) {
     /*#home .typing-text span::after{
         height: 50%;
     }*/
 
-    #home .content h1{
+    #home .content h1 {
         font-size: 3rem;
     }
 
-    #home .content h2{
+    #home .content h2 {
         font-size: 1.3rem;
     }
-    
-    
-    #home .content h3{
+
+
+    #home .content h3 {
         font-size: 2rem;
     }
 }

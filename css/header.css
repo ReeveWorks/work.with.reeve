@@ -45,7 +45,7 @@ header nav a {
 header nav a:hover,
 header nav a.active {
     background-color: #b74b4b;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
 }
 
 header .btn_check,
@@ -53,7 +53,33 @@ header #displayNav {
     display: none;
 }
 
-@media(max-width:1100px) {
+/* Dropdown */
+header .home_dropdown {
+    position: absolute;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+header .home_dropdown a {
+    padding: 1rem 2.5rem;
+}
+
+header .home_drop:hover .home_dropdown {
+    display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:700px) {
 
     header .btn_check {
         font-size: 3rem;
@@ -64,18 +90,32 @@ header #displayNav {
 
     header nav ul {
         position: fixed;
-        width: 100%;
+        width: 35%;
         height: 100vh;
-        left: -100%;
-        margin-top: 1rem;
+        right: -100%;
+        margin-top: 0.9rem;
         background-color: rgba(0, 0, 0, 0.85);
         text-align: center;
         display: flex;
         flex-direction: column;
         transition: all .5s;
     }
-    
-    header nav ul a{
+
+    header nav ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    header .home_dropdown {
+        position:static;
+        background-color: black;
+        width: 100%;
+        top: 0;
+    }
+
+    header nav ul a {
         padding: 1.3rem;
     }
 
@@ -85,6 +125,6 @@ header #displayNav {
     }
 
     #displayNav:checked~ul {
-        left: 0;
+        right: 0;
     }
 }
