@@ -5,23 +5,14 @@
     gap: 8rem;
 }
 
-#home p {
-    font-size: 1.5rem;
-    text-align: justify;
-    text-align-last: center;
-}
-
-#home .content h1 {
+#home h1 {
     text-align: center;
     font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.3;
 }
 
-#home .content h2 {
+#home h2 {
     text-align: center;
     font-size: 2rem;
-    margin: -1rem 0;
     font-weight: 700;
 }
 
@@ -30,7 +21,7 @@
     color: white;
 }
 
-#home .content h3 {
+#home h3 {
     text-align: center;
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -39,83 +30,21 @@
 
 #home span {
     color: #b74b4b;
-}
-
-/*
-#home .btn{
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    color: #b74b4b;
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    border: 2px solid #b74b4b;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-#home .btn:hover{
-    transform: scale3d(1.03);
-    background-color: #b74b4b;
-    color: white;
-    box-shadow: 0 0 25px #b74b4b;
-}
-*/
-
-#home .social-icons a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: transparent;
-    border: 0.2rem solid #b74b4b;
-    font-size: 2rem;
-    border-radius: 50%;
-    margin: 1.5rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-    color: #b74b4b;
-}
-
-#home .social-icons {
-    text-align: center;
-}
-
-#home .social-icons a:hover {
-    color: white;
-    transform: scale(1.3) translateY(-5px);
-    background-color: #b74b4b;
-    box-shadow: 0 0 25px #b74b4b;
-}
-
-/*#home .images img{
-    position: relative;
-    width: 40vw;
-    transition: 0.2s linear;
-}*/
-
-#home .typing-text {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-
-#home .typing-text span {
     position: relative;
 }
 
-/*#home .typing-text span::before{
-    color: #b74b4b;
-    animation: words 20s infinite;
-}*/
+#home p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: justify;
+    text-align-last: center;
+}
+
 
 #home .typing-text span::after {
     content: "";
-    background-color: black;
-    position: absolute;
-    width: calc(0%);
+    position: relative;
+    width: 0%;
     height: 100%;
     border-left: 3px solid black;
     animation: cursor 0.6s infinite;
@@ -133,40 +62,31 @@
         margin: 3rem 2rem;
     }
 
-    #home .content h1 {
+    #home h1 {
         font-size: 3.5rem;
     }
 
-    #home .content h2 {
+    #home h2 {
         font-size: 1.5rem;
-        margin: -0.5rem 0;
     }
 
-    #home .content h3 {
+    #home h3 {
         font-size: 2.5rem;
-    }
-
-    #home img {
-        margin-top: -10rem;
-        margin-bottom: -5rem;
     }
 }
 
 @media(max-width:432px) {
-    /*#home .typing-text span::after{
-        height: 50%;
-    }*/
-
-    #home .content h1 {
+    #home h1 {
         font-size: 3rem;
     }
 
-    #home .content h2 {
+    #home h2 {
         font-size: 1.3rem;
     }
 
-
-    #home .content h3 {
+    #home h3 {
         font-size: 2rem;
     }
 }
+
+/* Parallax Scrolling */
