@@ -18,7 +18,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #0e0d13;
+    background-color: #262438;
     color: white;
 }
 
@@ -27,6 +27,9 @@ section{
     padding: 5rem 9% 5rem;
 }
 
+#home{
+    background-color: white;
+}
 
 #skills{
     background-color: rgb(19, 204, 250);

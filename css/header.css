@@ -14,7 +14,7 @@ header {
     z-index: 100;
 }
 
-header .header_logo {
+header .header-logo {
     font-size: 3rem;
     color: #b74b4b;
     font-weight: 800;
