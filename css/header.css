@@ -5,9 +5,6 @@ header {
     left: 0;
     width: 100%;
     padding: 0.9rem 0rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
-    /* Added shadow details */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,10 +13,16 @@ header {
 
 header .header-logo {
     font-size: 3rem;
-    color: #b74b4b;
+    color: #ffffff;
     font-weight: 800;
     margin-left: 5rem;
-}
+    /*
+    background-color: rgb(196, 190, 235, .95);
+    padding: 1.5rem;
+    border: 3px solid #322F44; 
+    border-radius: 10px 0px;
+    */
+    }
 
 header nav {
     margin-right: 5rem;

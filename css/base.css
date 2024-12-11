@@ -18,7 +18,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #262438;
+    background-color: rgb(38, 36, 56);
     color: white;
 }
 
@@ -28,11 +28,12 @@ section{
 }
 
 #home{
-    background-color: white;
+    background-color: gray;
 }
 
 #skills{
-    background-color: rgb(19, 204, 250);
+    background-color: rgb(50, 47, 68);
+    position: relative;
 }
 
 #experience{
@@ -49,4 +50,5 @@ section{
 
 #contact{
     background-color: rgb(63, 179, 97);
+    position: relative;
 }
