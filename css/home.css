@@ -121,14 +121,33 @@
     background-size: 200px 160px;
     background-image: url("../resources/home/handrails.png");
 }
-
-.home-city{
+#home .home-towers{
     position: absolute;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-position: bottom;
     width: 100%;
     height: 100%;
-    /*background-image: url("../resources/home/temp_cityscape.png");*/
+    background-image: url("../resources/home/tower.png");
+}
+#home .home-waterscape{
+    position: absolute;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-image: url("../resources/home/waterscape.png");
+}
 
-    background-size: cover; /* Scales the image to cover the container */
-    background-position: center; /* Ensures the image is centered */
+
+.home-train{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-left: -100%;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-size: 900px 600px;
+    background-image: url("../resources/home/train.png");
 }

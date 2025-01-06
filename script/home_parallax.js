@@ -8,7 +8,7 @@
 
 let txthome = document.getElementById('txthome');
 let railshome = document.getElementById('railshome');
-let cityhome = document.getElementById('cityhome');
+let train = document.getElementById('trainhome');
 
 window.addEventListener('scroll', ()=> {
     let value = window.scrollY;
@@ -16,7 +16,7 @@ window.addEventListener('scroll', ()=> {
     txthome.style.marginBottom= value * -2.5 + 'px';
 
     //railshome.style.left = value * -0.5 + 'px';
-    //cityhome.style.left = value * -1.5 + 'px';
+    train.style.left = value * 5 + 'px';
 
     //leaf.style.top = value * -1.5 + 'px';
     //leaf.style.left = value * 1.5 + 'px';
