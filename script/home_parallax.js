@@ -13,7 +13,7 @@ let train = document.getElementById('trainhome');
 window.addEventListener('scroll', ()=> {
     let value = window.scrollY;
 
-    txthome.style.marginBottom= value * -2.5 + 'px';
+    txthome.style.marginBottom= value * -1.5 + 'px';
 
     //railshome.style.left = value * -0.5 + 'px';
     train.style.left = value * 5 + 'px';

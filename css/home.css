@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     gap: 8rem;
+    color: #A198DB;
     background-image: ("../resources/home/temp_cityscape.png");
 }
 
@@ -22,7 +23,7 @@
 
 #home h2::After {
     content: "AND";
-    color: white;
+    color: #A198DB;
 }
 
 #home h3 {
@@ -42,6 +43,7 @@
     font-size: 1.5rem;
     margin-top: 2rem;
     padding: 0 30rem;
+    color: #322F44;
     position: relative;
     text-align: justify;
     text-align-last: center;
@@ -144,10 +146,10 @@
     position: absolute;
     background-repeat: no-repeat;
     background-position: bottom;
-    margin-left: -100%;
-    width: 100%;
+    margin-left: -350%;
+    width: 500%;
     height: 100%;
     background-size: contain;
-    background-size: 900px 600px;
+    background-size: auto 380px;
     background-image: url("../resources/home/train.png");
 }
